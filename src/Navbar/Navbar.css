@@ -1,0 +1,65 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px;
+  margin-bottom: 50px;
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+nav ul li {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  cursor: pointer;
+  color: rgb(104, 102, 102);
+  transition: all 0.3s;
+}
+nav ul li:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: -1px 2px 7px rgba(255, 251, 251, 0.6);
+}
+nav .send-btn {
+  padding: 10px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  border: 1px solid gray;
+  transition: all 0.3s;
+  transition: all 0.5s;
+}
+nav .send-btn p {
+  background: linear-gradient(90deg, red, rgb(118, 33, 33), blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  font-weight: 600;
+  background-size: 0%;
+  position: relative;
+  animation: btn-anim 4s linear infinite;
+}
+nav .send-btn:hover {
+  box-shadow: 0.2px 0px 2px 0.5px rgb(190, 187, 187);
+}
+nav .send-btn:hover p {
+  -webkit-text-fill-color: rgb(170, 170, 170);
+  font-size: 14px;
+  font-weight: 600;
+  animation: none;
+}
+
+@keyframes btn-anim {
+  0% {
+    background-size: 10%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

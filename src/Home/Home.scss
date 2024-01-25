@@ -1,0 +1,56 @@
+.Home {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+  gap: 80px;
+  .Home-child-left {
+    max-width: 55%;
+    .title {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 60px;
+      margin-bottom: 20px;
+      .title-child {
+        color: white;
+      }
+      .title-child-s {
+        color: gray;
+      }
+    }
+    .title-paragraph {
+      font-family: Fira Code;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0em;
+      color: #abb2bf;
+      margin-bottom: 30px;
+      padding: 0px 100px 0px 0px; //padding mobileda uchiriladi
+    }
+    .btn {
+      display: flex;
+      gap: 9px;
+      align-items: center;
+      padding: 5px 20px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.4s;
+      img {
+        width: 20px;
+      }
+      &:hover {
+        -webkit-box-shadow: 0px 0px 11px 5px rgba(3, 161, 114, 0.73);
+        -moz-box-shadow: 0px 0px 12px 5px rgba(3, 161, 114, 0.73);
+        box-shadow: 0px 0px 14px 5px rgba(3, 161, 114, 0.73);
+      }
+    }
+  }
+  .Home-child-right {
+    img {
+      width: 400px;
+      filter: drop-shadow(2px 10px 10px rgb(255, 255, 255));
+    }
+  }
+}
